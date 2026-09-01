@@ -7,6 +7,12 @@ use it at all.
 Written against **LangGraph 1.2.11** / **langchain-core 1.6.1**, on Python 3.12 and 3.13.
 Every version this book was verified against is listed in [Versions](#versions) below.
 
+Its companion is [LangChain: From First Call to Production][lc], which covers the layer
+above: models, prompts, tools, retrieval and `create_agent`. That book's Chapter 31 ends
+where this one begins.
+
+[lc]: https://github.com/johandeclercqdemocon/langchain-docs
+
 ## Who this is for
 
 Someone who can write Python and now has to build an LLM application that does more than one
