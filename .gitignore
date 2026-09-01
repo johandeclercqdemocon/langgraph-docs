@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+uv.lock
+
+# `langgraph.json` points at this; create an empty one to run `langgraph dev`.
+.env
+
+*.sqlite
+.langgraph_api/
