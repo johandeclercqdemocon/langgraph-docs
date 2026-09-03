@@ -146,7 +146,11 @@ def build_agent(script: list | None = None, checkpointer=None):
 def build_hitl(checkpointer=None):
     """Every draft is shown to a human before it counts as done."""
 
-    def review(state: TicketState) -> Command[Literal["draft", "__end__"]]:
+    # The annotation is the whole destination list. Widening it to include
+    # "draft" would declare an edge the code never takes -- and a declared edge
+    # is a real edge: it would put this node in a cycle for anything reading the
+    # graph's shape. See scripts/analyze_graph.py.
+    def review(state: TicketState) -> Command[Literal["__end__"]]:
         decision = interrupt({"draft": state["draft"], "ticket": state["ticket_id"]})
         if decision == "approve":
             return Command(update={"trail": ["approved"]}, goto=END)

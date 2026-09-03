@@ -154,6 +154,7 @@ Code lives in [`examples/triage/`](examples/triage/).
 - [A — API cheatsheet](appendices/a-cheatsheet.md) — everything in one page
 - [B — Glossary](appendices/b-glossary.md)
 - [C — Further reading](appendices/c-further-reading.md)
+- [D — What the graph's shape can tell you](appendices/d-graph-shape.md) — a static analyser, and why the drawn diagram is not the graph
 
 ---
 

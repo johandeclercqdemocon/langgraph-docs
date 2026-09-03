@@ -1,1 +1,1 @@
-{ "venvPath": ".", "venv": ".venv", "typeCheckingMode": "basic" }
+{ "venvPath": ".", "venv": ".venv", "typeCheckingMode": "basic", "extraPaths": ["scripts"] }

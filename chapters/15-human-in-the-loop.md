@@ -9,12 +9,20 @@ person, and continue — possibly minutes later, in a different process — with
 Inside a node, `interrupt(payload)` stops the graph and surfaces the payload:
 
 ```python
-def review(state) -> Command[Literal["draft", "__end__"]]:
+def review(state) -> Command[Literal["__end__"]]:
     decision = interrupt({"draft": state["draft"], "ticket": state["ticket_id"]})
     if decision == "approve":
         return Command(update={"trail": ["approved"]}, goto=END)
     return Command(update={"draft": str(decision), "trail": ["edited"]}, goto=END)
 ```
+
+That annotation is not decoration. It is where LangGraph reads this node's outgoing
+edges from — nothing called `add_edge` for them — so it must list exactly the
+destinations the code can reach. Both branches here end, so `Literal["__end__"]` is the
+whole list. Adding `"draft"` to it because a reviewer's edit *feels* like it should
+re-draft would declare an edge the code never takes, and put this node in a loop as far
+as anything reading the graph's shape is concerned. [Appendix D](../appendices/d-graph-shape.md)
+checks for exactly this.
 
 Run it and `invoke` returns early:
 
