@@ -13,6 +13,8 @@ where this one begins.
 
 [lc]: https://github.com/johandeclercqdemocon/langchain-docs
 
+**[Read it as a PDF](langgraph-book.pdf)** — the whole book in one file, 155 pages, with a linked table of contents. Rebuild it with `python scripts/build_pdf.py` (needs `weasyprint markdown pygments`, which are deliberately not project dependencies).
+
 ## Who this is for
 
 Someone who can write Python and now has to build an LLM application that does more than one
