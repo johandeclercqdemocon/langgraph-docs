@@ -217,6 +217,16 @@ Then prove the re-run rule to yourself, because it is the one that bites: add
 [`examples/triage/graph.py`](../examples/triage/graph.py) and run the first command again.
 It prints twice for one logical review.
 
+## Exercises
+
+1. Interrupt before a node, inspect the state, and resume. Name the two things that must be
+   in place.
+2. Explain what `interrupt` does to the process — where does execution live while it waits?
+3. Modify state during the pause and resume. When is that better than approve/reject?
+4. Sketch the web-application shape, and say what must not be request-scoped.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - `interrupt(payload)` pauses mid-node; `invoke(Command(resume=value), config)` continues,

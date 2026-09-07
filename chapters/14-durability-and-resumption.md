@@ -197,6 +197,16 @@ Then make the point about idempotency concrete: add `print("CHARGING")` to `step
 `/tmp/job.sqlite`, and run both commands again. It prints once. Now move the `raise` into
 `step1` itself and watch what a non-idempotent node in the *failing* superstep costs you.
 
+## Exercises
+
+1. Kill a run mid-execution and resume it. Which node boundary did it resume from, and why
+   that one?
+2. Explain what durability guarantees and what it does not.
+3. Make a node that is not safe to re-execute, then make it safe. What did you have to add?
+4. Give the interaction between durability and side effects that catches people.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - `invoke(None, config)` resumes a thread from wherever it stopped, in any process.

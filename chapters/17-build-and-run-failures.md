@@ -187,6 +187,15 @@ show('no input', lambda: StateGraph(S).add_node('a',lambda s:{'x':1}).add_edge(S
 Note which line says `OK`. The "no path to END" case is the one that will cost you an
 afternoon precisely because it does not complain.
 
+## Exercises
+
+1. Break a graph at build time — an unreachable node or a missing edge — and read the error.
+2. Diagnose a graph that builds and then does nothing. What is the usual cause?
+3. A node's return value is rejected. Give the two most likely reasons.
+4. Distinguish a compile-time error from a runtime one, and say which you would rather have.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Build-time `ValueError`s — duplicate node, unknown edge target, reserved name, no entry

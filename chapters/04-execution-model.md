@@ -193,6 +193,17 @@ you get one more snapshot. **The graph's shape is its concurrency.**
 Then prove nodes in one superstep cannot see each other: have `b` write `category` and `c`
 print the `category` it received.
 
+## Exercises
+
+1. Describe one superstep in your own words, and say what happens between supersteps.
+2. Show that a node sees a consistent snapshot of state rather than other nodes' partial
+   writes.
+3. Explain why understanding the execution model makes parallel behaviour predictable rather
+   than surprising.
+4. Predict the order of node execution for a small graph, then verify it.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Execution proceeds in **supersteps**: every ready node runs against the same state

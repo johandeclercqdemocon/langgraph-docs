@@ -219,6 +219,15 @@ During task with name 'boom' and id '...'  <- the node
 
 → Ch 16
 
+## Exercises
+
+1. Using only the cookbook, diagnose: "the graph runs but a key is never updated".
+2. Diagnose: "it works on the first invocation and behaves oddly on the second".
+3. Diagnose: "the run cost twice what it should have".
+4. Identify the small set of root causes behind most cookbook entries.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ---
 
 Previous: [Chapter 21 — Errors, retries and caching](21-errors-retries-caching.md) ·

@@ -123,6 +123,15 @@ Then make a deprecation warning appear, so you recognise the shape of one:
 uv run python -c "from langgraph.prebuilt import create_react_agent" 2>&1 | tail -2
 ```
 
+## Exercises
+
+1. Name the projects around LangGraph and the boundary between them.
+2. Determine which package a given import belongs in, and why the split exists.
+3. Give the staleness problem in this ecosystem and a method for coping with it.
+4. Name one alternative and the case where it is the better choice.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Four layers: **LangChain** (framework), **LangGraph** (runtime), **Deep Agents** (harness),

@@ -167,6 +167,16 @@ Note that thread `t2` sent `'x'` and still recalled the earlier value — the st
 the thread. Now change the second call's `user_id` to `'u2'` and watch the memory disappear:
 that is the namespace doing its job.
 
+## Exercises
+
+1. Distinguish the Store from the checkpointer in one sentence each.
+2. Write something to the Store in one thread and read it in another. Why can the checkpointer
+   not do this?
+3. Design the key structure for per-user memory. What must be in the namespace?
+4. Give the failure mode of putting long-term memory in state instead.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Checkpointer = one conversation. **Store = facts that outlive it.** Most real applications

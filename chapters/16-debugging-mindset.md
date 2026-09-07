@@ -177,6 +177,15 @@ for c in g.stream({'ticket_id':'T-1','body':'billing refund'}, stream_mode='upda
 "
 ```
 
+## Exercises
+
+1. Name the layers a LangGraph failure can live in, and the cheapest probe for each.
+2. Make a non-deterministic failure reproducible. What must you pin?
+3. Explain why inspecting state at a checkpoint beats adding print statements.
+4. Bisect a graph run. What is the equivalent of stepping through with a debugger?
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Identify the **layer** before forming a theory: structure, execution, state, model,

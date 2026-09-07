@@ -239,6 +239,16 @@ uv run python -c "from examples.triage.graph import build_routed; print(build_ro
 
 The dotted lines are conditional edges — Chapter 6.
 
+## Exercises
+
+1. Build the smallest graph that does something, and name every object you had to create.
+2. Add a second node and an edge. What changed about how you reason about the program?
+3. Compile the graph and inspect it. What does compilation actually produce?
+4. Draw your graph's structure without running it. Why is that possible here and not for a
+   chain of arbitrary Python?
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Every graph is three parts: a state schema, node functions, and the wiring, then `.compile()`.

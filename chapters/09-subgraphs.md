@@ -201,6 +201,15 @@ Then apply each fix — rename the subgraph's key to `sub_log`, and separately r
 subgraph node with a wrapper function — and confirm both give `['before', 'inner', ...]`
 exactly once.
 
+## Exercises
+
+1. Nest a subgraph and show how its state relates to the parent's.
+2. Give a reason to use a subgraph that is not "the graph got long".
+3. Explain what a subgraph does to checkpointing and to streaming.
+4. When is a subgraph the wrong tool, and what would you use instead?
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - A compiled graph can be used directly as a node. Shared state keys are passed in and out

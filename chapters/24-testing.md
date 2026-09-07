@@ -201,6 +201,15 @@ from `>= 0.5` to `> 0.5` — the boundary test fails and nothing else does. Then
 in `draft`'s return dict and confirm `test_every_node_writes_only_known_keys` is the one that
 notices, because no other test can.
 
+## Exercises
+
+1. Test a node in isolation. What made that easy, and what would have made it hard?
+2. Test a routing function without running the graph. Why is this the highest-value test?
+3. Test a full graph run deterministically. What did you have to fake?
+4. Test resumption. What does that require that other tests do not?
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - The model is non-deterministic; your graph is not. Test the graph.

@@ -237,6 +237,15 @@ For a pull request touching a graph:
 - [ ] Do node names and the state schema remain compatible with live threads?
 - [ ] Are routers covered by tests at their boundaries?
 
+## Exercises
+
+1. Review a graph you have written against this chapter and list the violations.
+2. Rank the three anti-patterns most damaging in your own work.
+3. Several entries share a root cause. Identify what unifies the state and parallelism ones.
+4. Which of these would a type checker catch, and which require judgement?
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Most anti-patterns here are one of three things: **using more machinery than the problem

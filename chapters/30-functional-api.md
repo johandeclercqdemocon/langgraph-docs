@@ -141,6 +141,15 @@ print('state :', triage.get_state(cfg).values)
 Then add a `print` outside any task and one inside a task, pause the workflow with an
 `interrupt()`, resume it, and observe which printed twice.
 
+## Exercises
+
+1. Express a small graph with the Functional API and compare it with the graph version.
+2. Give what the Functional API keeps and what it gives up.
+3. Explain when the imperative form is clearly better, and when it is clearly worse.
+4. Show that both compile to the same runtime guarantees.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - `@entrypoint` and `@task` give durability, resumption, streaming and `interrupt()` to an

@@ -227,6 +227,15 @@ print(g.invoke({'body':'hi'}))
 "
 ```
 
+## Exercises
+
+1. Restructure a prototype graph into modules. What moved, and what defines the boundary?
+2. Decide where the graph is compiled and why it should not be per-request.
+3. Where do the checkpointer and Store belong in the layout?
+4. Draw the boundary between the web layer and the graph. What must not cross it?
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Keep `nodes.py` and `routers.py` free of graph imports. That is what makes them testable

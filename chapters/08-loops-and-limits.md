@@ -219,6 +219,15 @@ except Exception as e: print(type(e).__name__+':', str(e).splitlines()[0])
 Then replace the always-`'bump'` router with one that returns `END` at `n >= 5`, and confirm
 it finishes with `{'n': 5}` instead of raising.
 
+## Exercises
+
+1. Build a loop and terminate it on a state condition. What is the termination expressed as?
+2. Hit the recursion limit deliberately and read the error. What is it protecting you from?
+3. Give three termination conditions and say which are safe alone.
+4. Explain why a loop bounded only by the model's judgement is not bounded.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - A cycle is an edge pointing backwards. Every loop needs **an edge back and a conditional

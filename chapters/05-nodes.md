@@ -202,6 +202,15 @@ print(classify({'body': 'my toaster is sentient'}))
 "
 ```
 
+## Exercises
+
+1. Write a node and state precisely what it receives and what it must return.
+2. Return a partial state update rather than the whole state. Why is that the convention?
+3. Make a node raise and observe what happens to the run. What survives?
+4. Give two things a node should not do, and where that logic belongs instead.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - A node is a plain function. No base class, no decorator, no framework import.

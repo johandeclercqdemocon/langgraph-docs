@@ -170,6 +170,15 @@ Finally, simulate the deploy hazard, which is the exercise worth doing. Pause a 
 [`examples/triage/graph.py`](../examples/triage/graph.py), and try to resume the thread you
 already paused.
 
+## Exercises
+
+1. List what must exist in production that does not exist locally.
+2. Choose a checkpointer and a Store for a real deployment and defend both.
+3. Explain what has to be true for a graph to scale horizontally.
+4. Give the deployment mistake that makes resumption silently impossible.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Either embed the graph in your own application, or run the LangGraph API server. Pick the

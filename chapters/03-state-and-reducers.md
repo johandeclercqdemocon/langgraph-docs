@@ -249,6 +249,17 @@ g.invoke({})
 Now fix it by changing `out: str` to `out: Annotated[list, operator.add]` and having each
 node return a list.
 
+## Exercises
+
+1. Define a state schema and show what happens to a key with no reducer when two nodes
+   write it.
+2. Add a reducer that appends rather than replaces. Explain when each is correct.
+3. Explain why the state schema is described as the design rather than a type annotation.
+4. Write a reducer that is not commutative and show the problem it creates under
+   parallelism.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Without a reducer, a write **replaces**. Returning a list does not append to a list.

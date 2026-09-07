@@ -169,6 +169,15 @@ print('stopped cleanly at:', g.invoke({'n': 0}, {'recursion_limit': 25}))
 "
 ```
 
+## Exercises
+
+1. Build a runaway loop, then bound it three different ways.
+2. Explain why the recursion limit is a safety net rather than a design.
+3. Measured in this book: twice for one review. Reproduce a duplicated call and explain it.
+4. Put a cost bound on a graph. What do you measure, and where do you enforce it?
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - **The default recursion limit is 10007.** Unset, a broken agent loop is roughly ten

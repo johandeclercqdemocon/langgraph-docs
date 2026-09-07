@@ -196,6 +196,18 @@ print('original head:', g.get_state(cfg).values)
 
 Then do it again into a fresh `thread_id` and confirm the original head is untouched.
 
+## Exercises
+
+1. Roll back to an earlier checkpoint and continue from it. What happened to the discarded
+   future?
+2. Fork a thread by resuming from a past checkpoint with different input. What does that
+   enable?
+3. Explain why time travel is a consequence of the execution model rather than a feature
+   bolted on.
+4. Give a production use for time travel that is not debugging.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - `get_state_history()` yields every checkpoint, **newest first**. Each row is the state

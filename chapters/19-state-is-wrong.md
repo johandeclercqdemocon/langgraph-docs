@@ -199,6 +199,15 @@ print(Counter(k for c in g.stream({'ticket_id':'T-1','body':'billing refund'}, s
 "
 ```
 
+## Exercises
+
+1. State is wrong at the end of a run. Give the first thing to inspect, and why.
+2. A key has the wrong value after parallel execution. Give the two candidate causes.
+3. Explain how to find *which node* wrote a bad value.
+4. Give the reducer bug that is invisible in serial execution and obvious under load.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Six causes cover nearly all wrong-state bugs: no reducer, a typo'd key, mutation, a stale

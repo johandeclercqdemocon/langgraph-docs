@@ -201,6 +201,15 @@ for i in (1,2):
 Now add a `print("side effect")` to `slow` and confirm it does not print on the second run.
 That is the caching trap in one line.
 
+## Exercises
+
+1. Add a retry to a node and describe exactly what is retried.
+2. Cache a node's result. What must be true about the node for that to be safe?
+3. Distinguish an error that should fail the run from one that should be handled in state.
+4. Give the interaction between retries and checkpointing that surprises people.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Classify before responding: **transient** → retry, **model-recoverable** → return as a

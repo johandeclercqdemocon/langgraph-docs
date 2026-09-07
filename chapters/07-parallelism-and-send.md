@@ -241,6 +241,15 @@ print(g.invoke({'topics': list('abcdef'), 'results': []})['results'])
 
 Finally, remove the reducer from `results` and watch it become `InvalidUpdateError`.
 
+## Exercises
+
+1. Fan out with `Send` and collect the results. What did the reducer have to be?
+2. Explain the difference between parallel edges and `Send`, and when you need the second.
+3. Show what happens when two parallel branches write the same key without a reducer.
+4. Bound the fan-out. What happens without a bound, and what is the cost model?
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Parallelism is graph shape, not a setting. Two edges out of one node means both run.

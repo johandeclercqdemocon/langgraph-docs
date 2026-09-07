@@ -189,6 +189,16 @@ so you recognise it in someone else's code:
 uv run python -c "from langgraph.prebuilt import create_react_agent" 2>&1 | tail -2
 ```
 
+## Exercises
+
+1. Build the prebuilt agent, then describe exactly what graph it is.
+2. Reproduce something the prebuilt agent does that you would have had to write. Which parts
+   would you get wrong first?
+3. Give the point at which you should stop using the prebuilt agent and build the graph.
+4. Bound the prebuilt agent's loop and verify the bound holds.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - **`from langgraph.prebuilt import create_react_agent` is deprecated.** Use

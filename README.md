@@ -13,7 +13,7 @@ where this one begins.
 
 [lc]: https://github.com/johandeclercqdemocon/langchain-docs
 
-**[Read it as a PDF](langgraph-book.pdf)** — the whole book in one file, 155 pages, with a linked table of contents. Rebuild it with `python scripts/build_pdf.py` (needs `weasyprint markdown pygments`, which are deliberately not project dependencies).
+**[Read it as a PDF](langgraph-book.pdf)** — the whole book in one file, 176 pages, with a linked table of contents. Rebuild it with `python scripts/build_pdf.py` (needs `weasyprint markdown pygments`, which are deliberately not project dependencies).
 
 ## Who this is for
 
@@ -70,7 +70,10 @@ the output. Three examples that turned up this way:
 - Pydantic state validates your *input* but **not what nodes write** — a node can violate its
   own field constraints without error. (Ch 23)
 
-Chapters end with **Try it** (runnable, offline, free) and **Takeaways**.
+Chapters end with **Try it** (runnable, offline, free), four **Exercises**, and
+**Takeaways**. The exercises are problems rather than walkthroughs — several ask you to break
+something deliberately and explain the result. All 128 have worked solutions in
+[Appendix D](appendices/d-solutions.md).
 
 ## The running example
 
@@ -156,6 +159,7 @@ Code lives in [`examples/triage/`](examples/triage/).
 - [A — API cheatsheet](appendices/a-cheatsheet.md) — everything in one page
 - [B — Glossary](appendices/b-glossary.md)
 - [C — Further reading](appendices/c-further-reading.md)
+- [D — Solutions to the exercises](appendices/d-solutions.md) — all 128, worked
 - [D — What the graph's shape can tell you](appendices/d-graph-shape.md) — a static analyser, and why the drawn diagram is not the graph
 
 ---

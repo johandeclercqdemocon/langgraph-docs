@@ -213,6 +213,15 @@ print(g.invoke({'log': []}))
 
 You asked for `c`. You got `b` and `c`. Delete the `.add_edge('a','b')` and run again.
 
+## Exercises
+
+1. Add a conditional edge and route on state. What must the routing function return?
+2. Measured in Chapter 6: asked for `c`, got `b` and `c`. Reproduce that and explain it.
+3. Distinguish a conditional edge from a node that decides. When is each right?
+4. Build a graph where routing depends on a value a node computed, and trace one run.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Three mechanisms: `add_edge` (always), `add_conditional_edges` (branch), `Command`

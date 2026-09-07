@@ -170,6 +170,15 @@ print(f\" 10 + ckpt: {bench(build(10, InMemorySaver()), {'configurable':{'thread
 
 Then confirm the checkpointer is the expensive part, and that `durability='async'` moves it.
 
+## Exercises
+
+1. Quote the framework's measured overhead and say whether it matters for your graph.
+2. Determine where the time goes in a run. What dominates, and what does not?
+3. Determine where the money goes. Which term dominates?
+4. Give the cheap wins in order and apply the first one.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Measured overhead: **~0.23 ms per node**, **~0.9 ms per superstep** with an in-memory

@@ -138,6 +138,15 @@ print('trail:', out['trail'])
 "
 ```
 
+## Exercises
+
+1. Trace one graph run end to end. What did the trace show that logs would not?
+2. Achieve useful observability without a platform. What is the minimum?
+3. Give three things to alert on that are specific to graphs.
+4. Correlate a checkpoint with a trace. Why is that pairing useful during an incident?
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - The unit of observability is a **tree**, not a log line. Flattening it loses what makes a

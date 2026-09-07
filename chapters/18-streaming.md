@@ -171,6 +171,15 @@ print()
 Then compare `updates` and `values` on the same run and confirm they answer different
 questions.
 
+## Exercises
+
+1. Stream a graph run and describe what the events actually are.
+2. Stream tokens from inside a node. Why is that a different mechanism?
+3. Use streaming to observe state as it changes. What did that reveal?
+4. Name what you would observe in production beyond the final output.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Streaming is a debugging instrument as much as a UI feature. Chapter 16's triage is two

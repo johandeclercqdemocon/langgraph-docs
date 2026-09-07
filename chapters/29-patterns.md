@@ -154,6 +154,17 @@ print('agent  :', a['trail'], '->', str(a['messages'][-1].content)[:50])
 The router took a fixed, testable path. The agent took a path decided at runtime — more
 flexible, and the reason Chapters 20 and 24 exist.
 
+## Exercises
+
+1. For each pattern in this chapter, give a task it fits and a task it does not.
+2. Take something built as a free-form agent and express it as an explicit pattern. What
+   improved?
+3. Explain how the patterns relate to the execution model — why do these shapes and not
+   others?
+4. Choose a pattern for a real requirement and justify it against its neighbours.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Six patterns cover most applications: chain, router, agent, orchestrator–worker, reflection,

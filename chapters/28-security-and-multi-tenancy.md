@@ -155,6 +155,17 @@ Nothing stopped the read. The check has to be yours, above this layer.
 
 Then write the isolation test described above and put it in your suite.
 
+## Exercises
+
+1. Design tenant isolation for a graph with a Store. Where does the tenant id come from, and
+   where must it never come from?
+2. Explain why state is a security boundary, and what leaks if it is not.
+3. Constrain what a node may do. Why is that better than constraining the model?
+4. Give the multi-tenancy failure that checkpointing introduces if `thread_id` is chosen
+   badly.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - Prompt injection attacks a **decision**, not a parser, and **no prompt reliably prevents

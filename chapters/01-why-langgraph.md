@@ -179,6 +179,16 @@ uv run python -m examples.triage
 You are not expected to understand the output yet. Chapter 2 builds the first shape from
 nothing.
 
+## Exercises
+
+1. Take a task you would build with a chain and identify the point at which a chain stops
+   expressing it. That point is the argument for LangGraph.
+2. Name three things LangGraph gives you that a chain cannot, and the cost of each.
+3. State the relationship between LangGraph and LangChain in one sentence each.
+4. Give two situations where reaching for LangGraph is over-engineering.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - A hand-written `while` loop is a legitimate agent. Use one until a requirement breaks it.

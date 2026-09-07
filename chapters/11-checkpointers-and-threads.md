@@ -195,6 +195,15 @@ os.unlink(path)
 Finally, remove the `thread_id` from the config and read the error — you want to recognise
 it instantly.
 
+## Exercises
+
+1. Add a checkpointer and resume a run. What is the minimum you must supply?
+2. Explain what a thread is, and why `thread_id` is the design rather than a parameter.
+3. Inspect a thread's checkpoints. What is stored, and what is not?
+4. Choose a checkpointer for production and defend it against the in-memory one.
+
+Solutions in [Appendix D](../appendices/d-solutions.md).
+
 ## Takeaways
 
 - A checkpointer writes state after every **superstep**. One argument to `compile()` enables
