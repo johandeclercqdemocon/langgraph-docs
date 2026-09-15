@@ -177,20 +177,22 @@ reference; bookmark it.
 
 ## Where this fits
 
-Five books, written in the same style and to the same rule — every output was produced by
+Seven books, written in the same style and to the same rule — every output was produced by
 running the code. They form **a pair and a stack**:
 
 | | Book | What it is |
 |---|---|---|
 |  | [Docker: From First Container to Production](https://github.com/johandeclercqdemocon/docker-docs) | the unit of deployment |
 |  | [Kubernetes: From First Pod to Production](https://github.com/johandeclercqdemocon/kubernetes-docs) | running many of those units |
+|  | [OpenTofu and Terraform: From First Plan to Production](https://github.com/johandeclercqdemocon/opentofu-docs) | where the machines come from |
+|  | [CI/CD and GitOps: From First Pipeline to Production](https://github.com/johandeclercqdemocon/cicd-docs) | how the code gets there |
 |  | [LangChain: From First Call to Production](https://github.com/johandeclercqdemocon/langchain-docs) | the components of an LLM application |
 | **→** | [LangGraph: From First Graph to Production](https://github.com/johandeclercqdemocon/langgraph-docs) | the runtime beneath them |
-|   | [Deep Agents: From First Harness to Production](https://github.com/johandeclercqdemocon/deepagents-docs) | a ready-made harness on top |
+|  | [Deep Agents: From First Harness to Production](https://github.com/johandeclercqdemocon/deepagents-docs) | a ready-made harness on top |
 
-**There is no sequence that runs all five.** They fall into two groups that share nothing:
-**Docker → Kubernetes** (infrastructure) and **LangChain → LangGraph / Deep Agents** (LLM
-applications). Nothing in LangChain requires a container, and nothing in Docker mentions
+**There is no sequence that runs all seven.** They fall into two groups that share nothing:
+**Docker → Kubernetes → OpenTofu → CI/CD** (delivering software) and
+**LangChain → LangGraph / Deep Agents** (building LLM applications).
 models. The only join is deployment.
 
 The LLM group is a stack, not a line. LangChain is the foundation; above it, **LangGraph and
